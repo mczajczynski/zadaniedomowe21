@@ -1,0 +1,37 @@
+1.SELECT * FROM world.city where countrycode='POL';
+2.SELECT MAX(population) FROM world.city where countrycode='POL';
+3.SELECT SUM(population) FROM world.city where countrycode='POL';
+4.UPDATE world.city
+
+SET population = 100000
+
+WHERE id = 2928;
+5.insert into world.city(name,countrycode,district,population)
+
+VALUES
+('Dzierżoniów', 'POL', 'Dolnoslaskie',1000);
+6.delete FROM world.city where id=2930;
+7.SELECT * FROM world.city
+where countrycode='POL'
+
+ORDER BY population DESC
+
+LIMIT 5;
+8.SELECT * FROM world.city
+
+where district='Slaskie' and
+
+population>150000
+ORDER BY population
+
+LIMIT 3;
+COUNTRY:
+1.SELECT * FROM world.country
+
+ORDER BY lifeexpectancy DESC
+
+LIMIT 3;
+2.SELECT SUM(Population) FROM world.country
+3.SELECT * FROM world.country
+
+where indepyear= 1918;
